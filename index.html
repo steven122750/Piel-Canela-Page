@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -22,6 +22,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <script src="js/script-languaje.js"></script>
     
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -77,37 +78,38 @@
     <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-            <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 text-primary"><span class="text-dark">Piel</span> Canela Miami</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                    <a href="service.html" class="nav-item nav-link">Servicios</a>
-                    <a href="price.html" class="nav-item nav-link">Precios</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="opening.html" class="dropdown-item">Open Hours</a>
-                            <a href="team.html" class="dropdown-item">Our Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        </div>
+
+<!-- Navbar Start -->
+<div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 text-primary"><span class="text-dark" id="brand-name">Piel</span> Canela Miami</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0" id="navbar-links">
+                <a href="index.html" class="nav-item nav-link active" id="nav-home">Inicio</a>
+                <a href="about.html" class="nav-item nav-link" id="nav-about">Nosotros</a>
+                <a href="service.html" class="nav-item nav-link" id="nav-services">Servicios</a>
+                <a href="price.html" class="nav-item nav-link" id="nav-prices">Precios</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav-pages">Páginas</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="appointment.html" class="dropdown-item" id="nav-appointment">Cita</a>
+                        <a href="opening.html" class="dropdown-item" id="nav-opening">Horas de atención</a>
+                        <a href="team.html" class="dropdown-item" id="nav-team">Nuestro equipo</a>
+                        <a href="testimonial.html" class="dropdown-item" id="nav-testimonials">Testimonios</a>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary d-none d-lg-block">Book Now</a>
+                <a href="contact.html" class="nav-item nav-link" id="nav-contact">Contacto</a>
             </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
+            <a href="" class="btn btn-primary d-none d-lg-block" id="nav-reserve">Reserva ahora</a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
 
 
 <!-- Carousel Start -->
@@ -126,7 +128,7 @@
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Bronceado Brasileño</h6>
                         <h3 class="display-3 text-capitalize text-white mb-3">Luce un bronceado perfecto</h3>
                         <p class="mx-md-5 px-5">Descubre la magia del bronceado brasileño con nuestro servicio exclusivo. Luce radiante todo el año.</p>
-                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" <a href="https://api.whatsapp.com/send/?phone=13057662998&text&type=phone_number&app_absent=0" target="_blank" style="color: inherit; text-decoration: none;"> 
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="https://api.whatsapp.com/send/?phone=13057662998&text&type=phone_number&app_absent=0" target="_blank" style="color: inherit; text-decoration: none;"> 
                             <i class="fab fa-whatsapp mr-2"></i> Agenda tu cita
                         </a>
                         
@@ -140,7 +142,7 @@
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Estilo Miami</h6>
                         <h3 class="display-3 text-capitalize text-white mb-3">Bronceado de lujo</h3>
                         <p class="mx-md-5 px-5">El toque dorado que necesitas para brillar bajo el sol de Miami. Un bronceado sofisticado y elegante.</p>
-                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Reserva ahora</a>
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="https://api.whatsapp.com/send/?phone=13057662998&text&type=phone_number&app_absent=0" target="_blank" style="color: inherit; text-decoration: none;">Reserva ahora</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +153,7 @@
                         <h6 class="text-white text-uppercase mb-3 animate__animated animate__fadeInDown" style="letter-spacing: 3px;">Experiencia Exclusiva</h6>
                         <h3 class="display-3 text-capitalize text-white mb-3">Dale vida a tu piel</h3>
                         <p class="mx-md-5 px-5">Revitaliza tu piel con nuestro tratamiento de bronceado, ideal para obtener ese tono dorado perfecto.</p>
-                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="#">Haz tu cita</a>
+                        <a class="btn btn-outline-light py-3 px-4 mt-3 animate__animated animate__fadeInUp" href="https://api.whatsapp.com/send/?phone=13057662998&text&type=phone_number&app_absent=0" target="_blank" style="color: inherit; text-decoration: none;">Haz tu cita</a>
                     </div>
                 </div>
             </div>
@@ -170,20 +172,23 @@
                 <img class="img-fluid w-100" src="img/about.jpg" alt="">
             </div>
             <div class="col-lg-6">
-                <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2">Acerca de Nosotros</h6>
-                <h1 class="mb-4">El Mejor Centro de Bronceado y Cuidado de la Piel en Miami</h1>
-                <p class="pl-4 border-left border-primary">En Piel Canela, ofrecemos una experiencia de bronceado brasileño inigualable. Nuestro equipo de especialistas está dedicado a brindarte un servicio de alta calidad, asegurando que luzcas un bronceado perfecto, sin importar la época del año. La belleza y el cuidado de la piel son nuestra prioridad.</p>
+                <!-- Se agregan clases para cambiar el contenido dinámicamente -->
+                <h6 class="d-inline-block text-primary text-uppercase bg-light py-1 px-2 about-heading-subtitle">Acerca de Nosotros</h6>
+                <h1 class="mb-4 about-heading-title">El Mejor Centro de Bronceado y Cuidado de la Piel en Miami</h1>
+                <p class="pl-4 border-left border-primary about-description">
+                    En Piel Canela, ofrecemos una experiencia de bronceado brasileño inigualable. Nuestro equipo de especialistas está dedicado a brindarte un servicio de alta calidad, asegurando que luzcas un bronceado perfecto, sin importar la época del año. La belleza y el cuidado de la piel son nuestra prioridad.
+                </p>
                 <div class="row pt-3">
                     <div class="col-6">
                         <div class="bg-light text-center p-4">
-                            <h3 class="display-4 text-primary" data-toggle="counter-up">99</h3>
-                            <h6 class="text-uppercase">Especialistas en Bronceado</h6>
+                            <h3 class="display-4 text-primary specialists-count" data-toggle="counter-up">2</h3>
+                            <h6 class="text-uppercase specialists-label">Especialistas en Bronceado</h6>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="bg-light text-center p-4">
-                            <h3 class="display-4 text-primary" data-toggle="counter-up">999</h3>
-                            <h6 class="text-uppercase">Clientes Satisfechos</h6>
+                            <h3 class="display-4 text-primary clients-count" data-toggle="counter-up">700</h3>
+                            <h6 class="text-uppercase clients-label">Clientes Satisfechos</h6>
                         </div>
                     </div>
                 </div>
@@ -194,91 +199,51 @@
 <!-- About End -->
 
 
-
 <!-- Service Start -->
 <div class="container-fluid px-0 py-5 my-5">
     <div class="row mx-0 justify-content-center text-center">
         <div class="col-lg-6">
-            <h6 class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Nuestros Servicios</h6>
-            <h1>Servicios de Bronceado & Cuidado de la Piel</h1>
+            <h6 id="service-heading" class="d-inline-block bg-light text-primary text-uppercase py-1 px-2">Nuestros Servicios</h6>
+            <h1 id="service-title">Servicios de Bronceado & Cuidado de la Piel</h1>
         </div>
     </div>
     <div class="owl-carousel service-carousel">
         <div class="service-item position-relative">
             <img class="img-fluid" src="img/service-1.jpg" alt="">
             <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Bronceado Express</h4>
-                <p class="text-white px-3 mb-3">Obtén un bronceado brasileño rápido y uniforme en menos de 20 minutos, perfecto para cualquier ocasión especial.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
+                <h4 id="service-1-title" class="text-white font-weight-medium px-3">Bronceado Express</h4>
+                <p id="service-1-desc" class="text-white px-3 mb-3">Obtén un bronceado brasileño rápido y uniforme en menos de 20 minutos, perfecto para cualquier ocasión especial.</p>
+                <div class="w-100 bg-white text-center p-4">
+                    <a id="service-1-btn" class="btn btn-primary" href="">Hacer Cita</a>
                 </div>
             </div>
         </div>
         <div class="service-item position-relative">
             <img class="img-fluid" src="img/service-2.jpg" alt="">
             <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Terapia de Hidratación</h4>
-                <p class="text-white px-3 mb-3">Restaura la humedad y el brillo natural de tu piel con nuestra terapia de hidratación intensiva post-bronceado.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
+                <h4 id="service-2-title" class="text-white font-weight-medium px-3">Bronceado Brasilero con Bikini en Cinta</h4>
+                <p id="service-2-desc" class="text-white px-3 mb-3">Restaura la humedad y el brillo natural de tu piel con nuestra terapia de hidratación intensiva post-bronceado, combinada con la técnica de bikini en cinta para un acabado impecable.</p>
+                <div class="w-100 bg-white text-center p-4">
+                    <a id="service-2-btn" class="btn btn-primary" href="">Hacer Cita</a>
                 </div>
             </div>
         </div>
-        <div class="service-item position-relative">
-            <img class="img-fluid" src="img/service-3.jpg" alt="">
-            <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Exfoliación Pre-Bronceado</h4>
-                <p class="text-white px-3 mb-3">Prepara tu piel con una exfoliación profunda para un bronceado más duradero y uniforme.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
-                </div>
-            </div>
-        </div>
-        <div class="service-item position-relative">
-            <img class="img-fluid" src="img/service-4.jpg" alt="">
-            <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Cuidado de la Piel</h4>
-                <p class="text-white px-3 mb-3">Mantén tu piel saludable y radiante con nuestros tratamientos de cuidado de la piel personalizados.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
-                </div>
-            </div>
-        </div>
-        <div class="service-item position-relative">
-            <img class="img-fluid" src="img/service-5.jpg" alt="">
-            <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Baño de Vapor</h4>
-                <p class="text-white px-3 mb-3">Relájate y purifica tu piel con nuestro exclusivo baño de vapor después de tu bronceado.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
-                </div>
-            </div>
-        </div>
-        <div class="service-item position-relative">
-            <img class="img-fluid" src="img/service-6.jpg" alt="">
-            <div class="service-text text-center">
-                <h4 class="text-white font-weight-medium px-3">Mascarillas Faciales</h4>
-                <p class="text-white px-3 mb-3">Mejora la textura y luminosidad de tu piel con nuestras mascarillas faciales diseñadas para todo tipo de piel.</p>
-                <div class="w-100 bg-white text-center p-4" >
-                    <a class="btn btn-primary" href="">Hacer Cita</a>
-                </div>
-            </div>
-        </div>
+        <!-- Más servicios si es necesario -->
     </div>
     <div class="row justify-content-center bg-appointment mx-0">
         <div class="col-lg-6 py-5">
             <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
-                <h1 class="text-white text-center mb-4">Agendar Cita</h1>
+                <h1 id="appointment-title" class="text-white text-center mb-4">Agendar Cita</h1>
                 <form>
                     <div class="form-row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="text" class="form-control bg-transparent p-4" placeholder="Tu Nombre" required="required" />
+                                <input id="appointment-name" type="text" class="form-control bg-transparent p-4" placeholder="Tu Nombre" required="required" />
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <input type="email" class="form-control bg-transparent p-4" placeholder="Tu Correo" required="required" />
+                                <input id="appointment-email" type="email" class="form-control bg-transparent p-4" placeholder="Tu Correo" required="required" />
                             </div>
                         </div>
                     </div>
@@ -286,14 +251,14 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Seleccionar Fecha" data-target="#date" data-toggle="datetimepicker"/>
+                                    <input id="appointment-date" type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Seleccionar Fecha" data-target="#date" data-toggle="datetimepicker"/>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Seleccionar Hora" data-target="#time" data-toggle="datetimepicker"/>
+                                    <input id="appointment-time" type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Seleccionar Hora" data-target="#time" data-toggle="datetimepicker"/>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +266,7 @@
                     <div class="form-row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <select class="custom-select bg-transparent px-4" style="height: 47px;">
+                                <select id="appointment-service" class="custom-select bg-transparent px-4" style="height: 47px;">
                                     <option selected>Seleccionar un Servicio</option>
                                     <option value="1">Bronceado Express</option>
                                     <option value="2">Terapia de Hidratación</option>
@@ -310,7 +275,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <button class="btn btn-primary btn-block" type="submit" style="height: 47px;">Agendar Cita</button>
+                            <button id="appointment-submit" class="btn btn-primary btn-block" type="submit" style="height: 47px;">Agendar Cita</button>
                         </div>
                     </div>
                 </form>
@@ -318,8 +283,8 @@
         </div>
     </div>
 </div>
-<!-- Service End -->
 
+<!-- Service End -->
 
 
     <!-- Open Hours Start -->

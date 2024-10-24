@@ -28,6 +28,8 @@
 </head>
 
 <body>
+
+
     <!-- Topbar Start -->
     <div class="container-fluid bg-light d-none d-lg-block">
         <div class="row py-2 px-lg-5">
@@ -60,6 +62,8 @@
         </div>
     </div>
     <!-- Topbar End -->
+
+
 
 
     <!-- Navbar Start -->
@@ -109,8 +113,69 @@
     <!-- Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
+    <!-- Botones para traducir la página -->
+<button onclick="translatePage('es')">Traducir a Español</button>
+<button onclick="resetPage()">Volver a Inglés</button>
+
+<script type="text/javascript">
+  function translatePage(language) {
+    // Cargar el script de Google Translate si no está cargado
+    if (!document.getElementById('google_translate_script')) {
+      var googleTranslateScript = document.createElement('script');
+      googleTranslateScript.id = 'google_translate_script';
+      googleTranslateScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(googleTranslateScript);
+    }
+
+    // Inicializar el traductor de Google
+    window.googleTranslateElementInit = function() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      setTimeout(function() {
+        var select = document.querySelector('.goog-te-combo');
+        if (select) {
+          select.value = language;
+          select.dispatchEvent(new Event('change'));
+        }
+      }, 1000);
+    };
+
+    // Ocultar la interfaz del traductor
+    setTimeout(hideGoogleTranslateUI, 1500);
+  }
+
+  function hideGoogleTranslateUI() {
+    // Ocultar el banner superior
+    var gtIframe = document.querySelector('iframe.goog-te-banner-frame');
+    if (gtIframe) {
+      gtIframe.style.display = 'none';
+    }
+    // Ocultar el selector de idioma
+    var gtWidget = document.querySelector('.goog-te-combo');
+    if (gtWidget) {
+      gtWidget.style.display = 'none';
+    }
+    // Ocultar el iframe inferior
+    var gtFrame = document.querySelector('iframe.goog-te-menu-frame');
+    if (gtFrame) {
+      gtFrame.style.display = 'none';
+    }
+  }
+
+  // Función para resetear la página a su estado original (volver a inglés)
+  function resetPage() {
+    // Recargar la página para eliminar cualquier traducción
+    window.location.reload();
+  }
+</script>
+
+<!-- Elemento oculto para el traductor de Google -->
+<div id="google_translate_element" style="display:none;"></div>
+
+
+
+
+
+
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 pb-5 pb-lg-0">
@@ -139,6 +204,9 @@
         </div>
     </div>
     <!-- About End -->
+
+
+
 
 
     <!-- Team Start -->
